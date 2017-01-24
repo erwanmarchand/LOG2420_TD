@@ -1,0 +1,167 @@
+.premier_bandeau {
+    background-color: #b91e32;
+
+margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+
+}
+
+.liste-menu {
+	color: white;
+	/*padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	
+	border-spacing:5em;*/
+
+	/*width: 100px;
+
+	/*margin-left: 100px;
+	margin-right: 100px;*/
+
+	/*border-collapse:separate;
+	border-spacing: 50px 0;*/
+
+	/*height: 35px;*/
+
+	/*float: left;*/
+	/*clear: left;*/
+	height: 35px;
+
+    width: 50%;
+    margin: 0 auto; 
+
+
+}
+
+.li1 {
+	float: left;
+list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+padding: 0 10px;
+font-size: 16px;
+position: relative;
+
+
+
+font-family: "trebuchet ms","Aller",Arial,sans-serif;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+
+text-decoration: none;
+        text-decoration-color: -moz-use-text-color;
+        text-decoration-line: none;
+        text-decoration-style: solid
+
+
+}
+
+.li2 {
+	/*display: block;*/
+margin-top: 0;
+line-height: 19px;
+padding: 8px 10px 8px 8px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 8px;	
+
+float: left;
+list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+padding: 0 10px;
+font-size: 16px;
+position: relative;
+
+text-align: center;
+
+font-family: "trebuchet ms","Aller",Arial,sans-serif;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+
+text-decoration: none;
+        text-decoration-color: -moz-use-text-color;
+        text-decoration-line: none;
+        text-decoration-style: solid
+
+}
+
+.li3 {
+	/*display: block;*/
+margin-top: 0;
+line-height: 19px;
+padding: 8px 10px 8px 8px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 8px;	
+
+float: left;
+list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+padding: 0 10px;
+font-size: 16px;
+position: relative;
+
+text-align: center;
+
+font-family: "trebuchet ms","Aller",Arial,sans-serif;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+
+    text-decoration: none;
+        text-decoration-color: -moz-use-text-color;
+        text-decoration-line: none;
+        text-decoration-style: solid;
+
+
+}
+
+.liste-menu > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.li1::after {
+    content: "|";
+    color: #fff;
+    position: absolute;
+    right: -1px;
+}
+
+.li2::after {
+    content: "|";
+    color: #fff;
+    position: absolute;
+    right: -1px;
+}
+
+.image_etudiants{
+	display: block;
+	margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
