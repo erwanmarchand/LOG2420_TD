@@ -147,6 +147,20 @@ text-transform: uppercase;
     right: -1px;
 }
 
+.bandeau_logo {
+	padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 1rem 0 0.4rem;
+    margin-top: 1rem;
+    margin-right: 0px;
+    margin-bottom: 0.4rem;
+    margin-left: 0px;
+	
+}
+
 .image_etudiants{
 	display: block;
 	margin: 0 auto;
@@ -154,6 +168,31 @@ text-transform: uppercase;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
+}
+
+.container{
+	    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.bandeau_liens_rapides{
+	    background: #EFEDEE;
+}
+
+.medias_sociaux > ul > li {
+    /*float: left;
+    margin: 0.2rem 0 0.2rem 0.25rem;
+    margin-top: 0.2rem;
+    margin-right: 0px;
+    margin-bottom: 0.2rem;
+    margin-left: 0.25rem;
+	
+	    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;*/
 }
 
 h1 {
