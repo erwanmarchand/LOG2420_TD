@@ -1,0 +1,7 @@
+Pour lancer serveur local :
+
+Php -S localhost:5000 dans terminal
+
+http://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-outdent
+
+Fontawesome pour des icons
