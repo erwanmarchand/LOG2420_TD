@@ -205,6 +205,21 @@ text-transform: uppercase;
     background-size: 18px 18px;*/
 }
 
+.tablefastlinkpic {
+    border-collapse: separate;
+    border-spacing: 15px 0px;
+}
+
+.fastlinkpic {
+    height: auto; 
+    width: auto; 
+    max-width: 25px; 
+    max-height: 25px;
+	
+	/*margin-left:3px;
+	margin-right:3px;*/
+}
+
 h1 {
     color: white;
     text-align: center;
