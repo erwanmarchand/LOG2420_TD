@@ -141,9 +141,36 @@ text-transform: uppercase;
 	
 	margin: auto;
     width: 950px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 	
 	
 }
+
+.language-switcher {
+     margin: 0;
+    padding-top: 60px;
+    padding-right: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.language-switcher>li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+     color: #1E90FF;
+    font-weight:bold;
+}
+
+.language-switcher.langue-link:link{
+color:blue;
+}
+
 
 .imageLogoPoly{/*
 float: left;
@@ -199,6 +226,7 @@ margin: auto;*/
 .tablefastlinkpic {
     border-collapse: separate;
     border-spacing: 15px 0px;
+    float:left
 }
 
 .fastlinkpic {
@@ -219,4 +247,29 @@ h1 {
 p {
     font-family: verdana;
     font-size: 20px;
+}
+
+.menu_bar {
+
+    float: right;
+    text-decoration: none;
+    color: #000;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+.search{
+     float: right;
+    text-decoration: none;
+    color: #000;
+     padding-right:30px;
+    padding-top:25px;
+}
+
+.liens_rapides{
+     float: right;
+    text-decoration: none;
+    color: #1E90FF;
+     padding-right:35px;
+    padding-top:25px;
 }
