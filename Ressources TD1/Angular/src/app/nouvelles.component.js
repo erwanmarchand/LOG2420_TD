@@ -39,7 +39,7 @@ var NouvellesComponent = (function () {
     NouvellesComponent = __decorate([
         core_1.Component({
             selector: 'news-table',
-            template: 'À compléter ',
+            template: "\nsdfgsg\n<table>\n\t<tbody>\n\n\t\t<tr *ngFor=\"let row of nouvelles\">\n\t\t\t<td>{{row.date}}</td>\n\t\t</tr>\n\n\t</tbody>\n\n\n</table>\n\n\n",
             styles: ['À compléter si nénessaire ..'],
             providers: [poly_data_service_1.PolyDataService]
         }), 

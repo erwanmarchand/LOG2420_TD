@@ -17,7 +17,7 @@ export class PolyDataService {
   constructor(private http: Http) { }
 
   getListeNouvelles(): Promise<Object> {
-    return this.http.get('../data/nouvelles.joson')
+    return this.http.get('app/nouvelles.json')
       .toPromise()
       .then(response => response.json())
       .catch(this.handleError);

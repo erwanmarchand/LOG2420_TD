@@ -9,7 +9,22 @@ import { PolyDataService } from './poly-data.service';
 
 @Component({
   selector: 'news-table',
-  template: 'À compléter ',
+  template: `
+sdfgsg
+<table>
+	<tbody>
+
+		<tr *ngFor="let row of nouvelles">
+			<td>{{row.date}}</td>
+		</tr>
+
+	</tbody>
+
+
+</table>
+
+
+`,
   styles: ['À compléter si nénessaire ..'],
   providers: [PolyDataService]
 })

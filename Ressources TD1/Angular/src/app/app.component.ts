@@ -84,6 +84,12 @@ import { MenuComponent } from './menu.component';
 					<a href="#" title="">Découvrez les possibilités</a>
 				</div> 
 			</div>
+
+
+
+			<div>
+				<news-table></news-table>
+			</div> 
 		</div> 
 	</div>
 

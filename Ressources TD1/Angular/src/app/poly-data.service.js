@@ -24,7 +24,7 @@ var PolyDataService = (function () {
         this.http = http;
     }
     PolyDataService.prototype.getListeNouvelles = function () {
-        return this.http.get('../data/nouvelles.joson')
+        return this.http.get('app/nouvelles.json')
             .toPromise()
             .then(function (response) { return response.json(); })
             .catch(this.handleError);
