@@ -10,12 +10,12 @@ import { PolyDataService } from './poly-data.service';
 @Component({
   selector: 'news-table',
   template: `
-sdfgsg
-<table>
+
+<table class="table">
 	<tbody>
 
-		<tr *ngFor="let row of nouvelles">
-			<td>{{row.date}}</td>
+		<tr class *ngFor="let row of nouvelles">
+			<td class= "news">{{row.date}} - " {{row.titre}} " : {{row.message}}</td>
 		</tr>
 
 	</tbody>
@@ -25,7 +25,20 @@ sdfgsg
 
 
 `,
-  styles: ['À compléter si nénessaire ..'],
+  styles: [`
+  
+  .table{
+     margin: auto; 
+	  width: 950px;
+  }
+
+  .news{
+     border-bottom: 1px solid #fa961e;
+    padding: 5px 10px;   
+    font-size: 0.9rem;
+  }
+  
+  `],
   providers: [PolyDataService]
 })
 export class NouvellesComponent implements OnInit {
