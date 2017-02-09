@@ -167,6 +167,16 @@ text-transform: uppercase;
     font-weight:bold;
 }
 
+.langue-lien{
+    text-decoration: none;
+    color: #1E90FF;
+}
+
+.discover_possibilities{
+    text-decoration: none;
+    color: #1E90FF;
+}
+
 .language-switcher.langue-link:link{
 color:blue;
 }
