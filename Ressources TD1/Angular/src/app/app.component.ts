@@ -66,25 +66,15 @@ import { MenuComponent } from './menu.component';
 
 				<img src="./images/groupeetudiants.jpg" alt="Image d etudiants" >
 
-			</div> 
-
-			<div class="bandeau_International">
+			</div><div class="bandeau_International">
 				<div class="Texte">
 					<h2>INTERNATIONAL</h2>
 					<p>Avec plus de 250 ententes universitaires et 24% d'étudiants internationaux, Polytechnique Montréal est plus que jamais ouverte sur le monde.</p>
 					<a href="#" title="" class="discover_possibilities">Découvrez les possibilités</a>
 				</div> 
 			</div>
-
-
-
-			 
-		</div> 
-
-		
-	</div>
-
-	<div>
+		</div> 	
+	</div><div>
 		<news-table></news-table>
 	</div>
 

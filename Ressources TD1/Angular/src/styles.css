@@ -1,34 +1,28 @@
 .premier_bandeau {
     background-color: #b91e32;
-
-margin: 0 auto;
+    margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-height: 35px;
-
+    height: 35px;
     display: block;
 }
 
 .bandeau_logo {
-	
 	margin: auto;
     width: 950px;
     padding-top: 15px;
     padding-bottom: 15px;
-	
-	
 }
 
 .language-switcher {
-     margin: 0;
+    margin: 0;
     padding-top: 60px;
     padding-right: 500px;
     position: absolute;
     top: 0;
     right: 0;
-
 }
 
 .language-switcher>li
@@ -37,7 +31,7 @@ height: 35px;
     padding: 0;
     list-style: none;
     text-align: right;
-     color: #1E90FF;
+    color: #1E90FF;
     font-weight:bold;
 }
 
@@ -52,10 +46,8 @@ height: 35px;
 }
 
 .language-switcher.langue-link:link{
-color:blue;
+    color:blue;
 }
-
-
 
 .image_etudiants{
 	margin: auto; 
@@ -63,7 +55,7 @@ color:blue;
 }
 
 .container{
-	    margin: 0 auto;
+    margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
@@ -72,30 +64,32 @@ color:blue;
 
 .bandeau_liens_rapides{
     font-family: "trebuchet ms","Aller",Arial,sans-serif;
-    font-weight: bold;
-	    background: #EFEDEE;
-		margin: auto;
+	background: #EFEDEE;
+	margin: auto;
     width: 950px;
 }
 
 .bandeau_International{
-    
     font-family: "trebuchet ms","Aller",Arial,sans-serif;
-	    background: #EFEDEE;
-		margin: auto;
+	background: #EFEDEE;
+	margin: auto;
     width: 950px;
 }
 
 .bandeau_International .Texte{
-	    margin-left:10px;
-		margin-top:30px;
-		margin-bottom:30px;
+	margin-left:10px;
+    background: #EFEDEE;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 .bandeau_International .Texte>p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
+.bandeau_International .Texte>h2 {
+    margin-top: 10px;
+}
 
 .tablefastlinkpic {
     border-collapse: separate;
