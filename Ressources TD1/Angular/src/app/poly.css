@@ -154,6 +154,8 @@ text-transform: uppercase;
     position: absolute;
     top: 0;
     right: 0;
+    text-decoration: none;
+    color: #1E90FF;
 
 }
 
@@ -165,10 +167,18 @@ text-transform: uppercase;
     text-align: right;
      color: #1E90FF;
     font-weight:bold;
+    text-decoration: none;
+    color: #1E90FF;
 }
 
 .language-switcher.langue-link:link{
 color:blue;
+
+}
+
+.langue-lien{
+    text-decoration: none;
+    color: #1E90FF;
 }
 
 

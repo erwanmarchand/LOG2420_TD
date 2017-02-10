@@ -39,8 +39,8 @@ var NouvellesComponent = (function () {
     NouvellesComponent = __decorate([
         core_1.Component({
             selector: 'news-table',
-            template: "\nsdfgsg\n<table>\n\t<tbody>\n\n\t\t<tr *ngFor=\"let row of nouvelles\">\n\t\t\t<td>{{row.date}}</td>\n\t\t</tr>\n\n\t</tbody>\n\n\n</table>\n\n\n",
-            styles: ['À compléter si nénessaire ..'],
+            template: "\n\n<table class=\"table\">\n\t<tbody>\n    <tr>\n\t\t\t<td class=\"entete1\">nouvelles</td>\n      <td class=\"entete2\">activit\u00E9s</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<table class=\"table\">\n\t<tbody>\n\n\n\t\t<tr *ngFor=\"let row of nouvelles\">\n\t\t\t<td class= \"news\">{{row.date}} - \" {{row.titre}} \" : {{row.message}}</td>\n\t\t</tr>\n\n\t</tbody>\n\n\n</table>\n\n\n",
+            styles: ["\n  \n  .table{\n     margin: auto; \n\t  width: 950px;\n  }\n\n  .entete1{\n    width: 475px;\n    text-align: left;\n    border-bottom: 1px solid #fa961e;\n    border-top: 1px solid #fa961e;\n    padding: 8px 40px;\n    font-family: \"trebuchet ms\",\"Aller\",Arial,sans-serif;\n    font-weight: bold;\n    text-transform: uppercase; \n    color: #666;\n  }\n\n  .entete2{\n    width: 475px;\n    text-align: left;\n    border-bottom: 1px solid #fa961e;\n    border-top: 1px solid #fa961e;\n    padding: 8px 40px;\n    font-family: \"trebuchet ms\",\"Aller\",Arial,sans-serif;\n    font-weight: bold;\n    text-transform: uppercase; \n    color: #666;\n\n        background: #b7b7b7;\n  }\n\n  .news{\n     border-bottom: 1px solid #fa961e;\n    padding: 8px 10px;   \n    font-size: 0.9rem;\n    font-family: \"trebuchet ms\",\"Aller\",Arial,sans-serif;\n  }\n  \n  "],
             providers: [poly_data_service_1.PolyDataService]
         }), 
         __metadata('design:paramtypes', [poly_data_service_1.PolyDataService])

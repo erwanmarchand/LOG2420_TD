@@ -23,8 +23,12 @@ export class PolyDataService {
       .catch(this.handleError);
   }
 
-  // À compléter
-  // ...
+  getListeMenu(): Promise<Object> {
+    return this.http.get('app/menu.json')
+      .toPromise()
+      .then(response => response.json())
+      .catch(this.handleError);
+  }
 
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error); // for demo purposes only

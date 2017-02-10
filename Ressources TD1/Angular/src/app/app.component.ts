@@ -9,16 +9,7 @@ import { MenuComponent } from './menu.component';
 	<header role="banner">
 
 		<div class="premier_bandeau">
-			<ul class="liste-menu">
-
-				<li class="li1"><a href="#" title="">Futur étudiant</a></li>
-				<li class="li2"><a href="#" title="">Étudiant actuel</a></li>
-				<li class="li2"><a href="#" title="">Diplômé - Ancien</a></li>
-				<li class="li2"><a href="#" title="">Entreprise</a></li>
-				<li class="li2"><a href="#" title="">Média</a></li>
-				<li class="li3"><a href="#" title="">Professeur - Personnel</a></li>
-
-			</ul> 
+			<menu-items></menu-items>
 		</div> 
 
 	</header>

@@ -17,19 +17,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var poly_data_service_1 = require('./poly-data.service');
 var MenuComponent = (function () {
-    function MenuComponent(dataService) {
-        this.dataService = dataService;
+    function MenuComponent(polyDataService) {
+        this.polyDataService = polyDataService;
     }
-    // À compléter 
-    // ...
+    // Permet d'obtenir les nouvelles en utilisant le service dédié.
+    MenuComponent.prototype.getListeMenu = function () {
+        var _this = this;
+        this.polyDataService.getListeMenu()
+            .then(function (response) { return _this.menuItems = response; })
+            .catch(this.handleError);
+    };
     MenuComponent.prototype.ngOnInit = function () {
-        // À compléter ...
+        this.getListeMenu();
+    };
+    // Méthode de gestion d'erreur.
+    MenuComponent.prototype.handleError = function (error) {
+        console.error('An error occurred', error);
+        return Promise.reject(error.message || error);
     };
     MenuComponent = __decorate([
         core_1.Component({
             selector: 'menu-items',
-            template: ' // À compléter si nécessaire ...',
-            styles: [],
+            template: "\n\n\n    \n\t\t\t<ul class=\"liste-menu\" *ngFor=\"let row of menuItems\">\n\n\t\t\t\t<li class=\"li1\"><a href={{row.link}}>{{row.title}}</a></li>\n\n\t\t\t</ul> \n\t\t\n  \n  ",
+            styles: ["\n  \n  \n  \n.liste-menu {\n\n    width: 50%;\n    margin: auto auto; \n\n\n}\n\n.li1 {\n\tfloat: left;\nlist-style: none;\n\n    padding-top: 8px;\n    padding-right: 10px;\n    padding-bottom: 8px;\n    padding-left: 8px;\n\t\nposition: relative;\n\n\n\nfont-family: \"trebuchet ms\",\"Aller\",Arial,sans-serif;\nfont-weight: bold;\ntext-transform: uppercase;\n\n\n\n}\n\n\n.liste-menu > li > a {\n    text-decoration: none;\n    color: white;\n}\n\n.li1::after {\n    content: \" | \";\n    color: #fff;\n    position: absolute;\n    right: -1px;\n}  \n  \n  "],
             providers: [poly_data_service_1.PolyDataService]
         }), 
         __metadata('design:paramtypes', [poly_data_service_1.PolyDataService])

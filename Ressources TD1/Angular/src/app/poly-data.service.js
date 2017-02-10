@@ -29,8 +29,12 @@ var PolyDataService = (function () {
             .then(function (response) { return response.json(); })
             .catch(this.handleError);
     };
-    // À compléter
-    // ...
+    PolyDataService.prototype.getListeMenu = function () {
+        return this.http.get('app/menu.json')
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
     PolyDataService.prototype.handleError = function (error) {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
