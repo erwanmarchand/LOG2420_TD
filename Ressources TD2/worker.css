@@ -1,0 +1,17 @@
+.numberTokens{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#totalTokenAndTexte{
+	text-align: center;
+}
+
+#textTokens{
+	    color: grey;
+		font-size: 20px;
+}
+
+h2{
+	text-align: center;
+}
