@@ -39,4 +39,7 @@ function startWorker() {
 function stopWorker() {
     w.terminate();
     w = undefined;
+	document.getElementById("result").innerHTML = "Annulé";
+	$("#buttonCompter").prop('disabled', false);
+	$("#buttonAnnuler").prop('disabled', true);
 }
