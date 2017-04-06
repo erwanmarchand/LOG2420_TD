@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Vélo Montréal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Vélo Montréal</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Accueil</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="fa fa-globe "></span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container">
+
+
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#carteTab">Carte des stations</a></li>
+      <li><a data-toggle="tab" href="#listeTab">Liste des stations</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div id="carteTab" class="tab-pane fade in active">
+        <div class="contentCarteTab">
+
+          <div class="col-md-4">
+
+            <div id="choseStation" class="ui-widget">
+              <input id="tags" onchange="myFunction()" placeholder="ex: du Mont-Royal / du Parc">
+            </div>
+
+            <h> Localisation: </h>
+            <hr class="separatorLocalisation">
+            <p class="selection" id="StationToShow"> Aucune sélection </p>
+          </div>
+
+
+          <div class="col-md-8">
+
+            <h> État de la station de vélos</h>
+            <hr class="separatorEtat">
+
+            <table class="table table-striped table-bordered">
+
+              <tbody>
+                <tr>
+                  <td><div class="col-md-6">ID Station</div><div class="col-md-6"><span class="badge" id="IDToShow">-</span></div></td>
+                  <td><div class="col-md-6">Vélos disponibles</div><div class="col-md-6"><span class="badge" id="dispVelosToShow">-</span></div></td>
+                </tr>
+                <tr>
+                  <td><div class="col-md-6">Bloquée</div><div class="col-md-6"><span class="badge" id="bloqueeToShow">-</span> </div></td>
+                  <td><div class="col-md-6">Bornes disponibles</div><div class="col-md-6"><span class="badge" id="dispBornesToShow">-</span></div></td>
+                </tr>
+                <tr>
+                  <td><div class="col-md-6">Suspendus</div><div class="col-md-6"><span class="badge" id="suspendusToShow">-</span></div></td>
+                  <td><div class="col-md-6">Vélos indisponibles</div><div class="col-md-6"><span class="badge" id="indispVelosToShow">-</span></div></td>
+                </tr>
+                <tr>
+                  <td><div class="col-md-6">Hors service</div><div class="col-md-6"><span class="badge" id="horsServiceToShow">-</span></div></td>
+                  <td><div class="col-md-6">Bornes indisponibles</div><div class="col-md-6"><span class="badge" id="indispBornesToShow">-</span></div></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
+        </div>
+
+       <div id="map"></div>
+
+       <script>
+      var map;
+      function initMap() {
+       var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 45.509, lng: -73.554},
+          zoom: 14
+        });
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjonwWBWoE1W6L8sU7KPl7zkRLSaPNC2o&callback=initMap">
+    </script>
+
+
+    
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjonwWBWoE1W6L8sU7KPl7zkRLSaPNC2o"></script> -->
+
+      </div>
+      <div id="listeTab" class="tab-pane fade">
+
+        <div class="etatTitle">
+          <h>État de toutes les stations de vélos</h>
+        </div>
+        <table id="example" class="display" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom Station</th>
+              <th>Vélos Disponibles</th>
+              <th>Bornes Disponibles</th>
+              <th>État bloqué</th>
+              <th>État suspendu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>n</td>
+              <td>s</td>
+              <td>ba</td>
+              <td>da</td>
+              <td>b</td>
+              <td>su</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

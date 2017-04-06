@@ -1,0 +1,153 @@
+.numberTokens{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#totalTokenAndTexte{
+	text-align: center;
+}
+
+#textTokens{
+	    color: grey;
+		font-size: 20px;
+}
+
+h2{
+	text-align: center;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #3293C5;
+    border-color: #E7E7E7;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-header:hover {
+    color: #ffffff;
+}
+
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #006CAB;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    /* cursor: default; */
+    background-color: #29B873;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+
+.etatTitle {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.contentCarteTab {
+    margin-top: 25px;
+}
+
+.contentCarteTab > div  > h {
+    color: #5AA8D2;
+    font-size: 25px;
+}
+
+
+#choseStation {
+    margin-bottom: 10px;
+}
+
+#StationToShow {
+    font-size: 25px;
+}
+
+.separatorLocalisation {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.separatorEtat{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border-top-width: 15px;
+    border-top-style: solid;
+    border-top-color: #5AA8D2;
+}
+
+.table-bordered {
+    border: 2px solid #fff;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    width: 20em;
+}
+
+
+
+
+#map {
+       height: 400px;
+        width: 100%;
+      }
